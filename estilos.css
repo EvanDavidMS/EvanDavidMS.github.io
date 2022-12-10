@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+
+body { 
+    background-color: rgb(26, 26, 26);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+}
+
+nav { 
+    display: flex;
+    align-items: center;
+    height: 40px;
+    max-width: 80%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li { 
+    margin: 20px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: yellow;
+}
+
+
+.changeColor { 
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.changeColor.active {
+    background-color: yellow;
+}
+

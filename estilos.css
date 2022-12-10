@@ -7,13 +7,25 @@
 
 
 body { 
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(134, 134, 134);
+    transition: .3s;
+}
+
+body.active {
+    background-color: rgb(29, 29, 29);
+    transition: .3s;
 }
 
 header {
     display: flex;
     align-items: center;
-    background-color: #000;
+    background-color: rgb(206, 206, 206);
+    transition: .3s;
+}
+
+header.active {
+    background-color: rgb(0, 0, 0);
+    transition: .3s;
 }
 
 nav { 
@@ -34,21 +46,29 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: yellow;
+    color: rgb(5, 5, 5);
+     transition: .3s;
+}
+
+nav ul li a.active {
+    color: rgb(251, 255, 14);
+     transition: .3s;
 }
 
 
 .changeColor { 
     width: 20px;
     height: 20px;
-    background-color: #fff;
+    background-color: rgb(23, 23, 23);
     position: absolute;
     right: 0;
     margin-right: 40px;
     cursor: pointer;
+     transition: .3s;
 }
 
 .changeColor.active {
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
+     transition: .3s;
 }
 

@@ -200,6 +200,8 @@ nav ul li a.active {
     nav {
         display: none;
     }
+
+  
 }
 
 
@@ -217,7 +219,7 @@ nav ul li a.active {
 
 
 .Inicio .svgEjemplo {
-    width: 40%;
+    width: 600px;
     height: 500px;
     background-color: transparent;
     margin-right: 60px;
@@ -229,7 +231,7 @@ nav ul li a.active {
 
 
 .Inicio .parrafoInicial {
-    width: 50%;
+    width: 700px;
     height: 400px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
@@ -268,10 +270,9 @@ nav ul li a.active {
     padding-top: 20px;
     padding-right: 30px;
     padding-left: 30px;
-    transition: .3s;
+    transition: 0.3s;
 }
 .parrafoInicial ul li p.active {
    color: #fff;
 }
-
 

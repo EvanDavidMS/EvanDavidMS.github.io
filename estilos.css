@@ -319,6 +319,10 @@ nav ul li a.active {
         visibility: hidden;
     }
 
+
+    .Inicio .parrafoInicial {
+        width: 380px;
+    }
     
 }
 

@@ -227,6 +227,7 @@ nav ul li a.active {
     background-repeat: none;
     background-image: url(img/ilustracion-inicio.svg);
     background-position: center;
+    
 }
 
 
@@ -276,3 +277,47 @@ nav ul li a.active {
    color: #fff;
 }
 
+@media(max-width: 1024px) {
+    .Inicio {
+        display: inline;
+        margin: 0;
+       
+    }
+
+    .nav-movil {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(209, 209, 209);
+        align-items: center;
+        justify-content: right;
+        padding-right: 30px;
+        transition: 0.3s;
+    }
+
+    .Inicio .svgEjemplo {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+
+
+    .Inicio .parrafoInicial {
+        display: flex;
+        width: 500px;
+        height: 500px;
+        margin: auto;
+    }
+
+    .parrafoInicial ul li h1 {
+      font-size: 25px;  
+    }
+}
+
+@media (max-width: 500px) {
+     .svgEjemplo {
+        display: none;
+        visibility: hidden;
+    }
+
+    
+}

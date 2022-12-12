@@ -121,6 +121,24 @@ body::-webkit-scrollbar-track {
 
 }
 
+
+/* Media 443 */
+@media(max-width:443px) {
+    header .seccion-header ul li h1 {
+        font-size: 42px;
+    }
+    header .seccion-header ul li h1 span {
+        font-size: 42px;
+    }
+
+    header .seccion-header ul li h3 {
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right:  20px;
+    }
+}
+
+
 /* Header cpm o,agem y los textos */
 
 

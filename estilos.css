@@ -96,6 +96,7 @@ body::-webkit-scrollbar-track {
     }
 
     .menu-movil-ul li {
+        padding-right: 25px;
         padding-top: 30px;
     }
 
@@ -108,10 +109,29 @@ body::-webkit-scrollbar-track {
     .img {
         padding-top: 20px;
         cursor: pointer;
+        opacity: 1;
+        transition: 0.4s;
     }
 
     .img.active { 
         visibility: hidden;
+        opacity: 0;
+        transition: 0.2s;
+    }
+
+    .seccion-header ul li h1{
+        color: #fff;
+        font-size: 20px;
+    }
+    .seccion-header ul li h1 span{
+        color: yellow;
+        font-size: 20px;
+    }
+    
+    .seccion-header ul li h3{
+        color: #fff;
+        font-size: 8px;
+        font-weight: 300;
     }
 }
 
@@ -162,6 +182,35 @@ header nav ul li a {
     right: 0;
     position: absolute;
     margin-right: 30px;
+}
+
+/* Inicio */
+.seccion-header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.seccion-header ul li {
+    list-style: none;
+}
+
+.seccion-header ul li h1{
+    color: #fff;
+    font-size: 80px;
+}
+.seccion-header ul li h1 span{
+    color: yellow;
+    font-size: 80px;
+}
+
+.seccion-header ul li h3{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 

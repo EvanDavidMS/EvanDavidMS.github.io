@@ -327,6 +327,18 @@ nav ul li a.active {
 }
 
 
+@media (max-width: 387px) {
+    .Inicio .parrafoInicial {
+        width: 300px;
+        height: 400px;
+    }
+
+    .Inicio .parrafoInicial p {
+        font-size: 12px;
+    }
+}
+
+
 
 
 /* Seccion 2 */

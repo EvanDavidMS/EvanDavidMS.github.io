@@ -60,7 +60,17 @@ body::-webkit-scrollbar-track {
        position: absolute;
        margin-top: 100px;
        opacity: 0;
-       transition: 0s;
+       transition: 0.2s;
+
+       visibility: visible;
+       width: 100%;
+       height: 300px;
+       background: linear-gradient( rgba(0, 0, 0, 0.9), rgb(0, 0, 0, 0.3) );
+       position: absolute;
+       top: 0;
+       left: 0;
+       display: flex;
+       flex-direction: column;
        
     }
 
@@ -92,10 +102,12 @@ body::-webkit-scrollbar-track {
     .button-movil {
         width: 30px;
         height: 30px;
+        cursor: pointer;
     }
 
     .img {
         padding-top: 20px;
+        cursor: pointer;
     }
 
     .img.active { 

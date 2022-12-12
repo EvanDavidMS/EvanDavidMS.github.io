@@ -41,6 +41,68 @@ body::-webkit-scrollbar-track {
     margin-bottom: 10px;
 }
 
+/* Menu Movil */
+.menu-movil {
+    visibility: hidden;
+}
+
+@media (max-width:768px) {
+    .nav-ul {
+        visibility: hidden;
+    }
+
+    .menu-movil {
+        visibility: visible;
+    }
+
+    .menu {
+        visibility: hidden;
+       position: absolute;
+       margin-top: 100px;
+       opacity: 0;
+       transition: 0s;
+       
+    }
+
+    .menu.active {
+        visibility: visible;
+        width: 100%;
+        height: 300px;
+        background: linear-gradient( rgba(0, 0, 0, 0.9), rgb(0, 0, 0, 0.3) );
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        opacity: 1;
+        transition: .2s;
+    }
+
+    .menu-movil-ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-movil-ul li {
+        padding-top: 30px;
+    }
+
+    .button-movil {
+        width: 30px;
+        height: 30px;
+    }
+
+    .img {
+        padding-top: 20px;
+    }
+
+    .img.active { 
+        visibility: hidden;
+    }
+}
+
 
 /* Header cpm o,agem y los textos */
 
@@ -77,6 +139,10 @@ header nav ul li a {
     color: #fff;
 }
 
+.img {
+    width: 50px;
+    height: 50px;
+}
 
 .imagen-logotipo {
     width: 50px;

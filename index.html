@@ -12,17 +12,30 @@
     <section id="home">
       <header>
         <nav>
-          <ul>
+          <ul class="nav-ul">
             <li><a href="#home">Home</a></li>
             <li><a href="#portafolio">Portafolio</a></li>
             <li><a href="#notas">Notas</a></li>
             <li><a href="#contactame">Contactame</a></li>
           </ul>
-          <img
+          <div class="menu-movil">
+            <div id="menu" class="menu">
+                <ul class="menu-movil-ul">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#notas">Notas</a></li>
+                    <li><a href="#contactame">Contactame</a></li>
+                    <li><button id="menuButtonExit" class="button-movil"></button></li>
+                  </ul>
+            </div>
+          </div>
+          <div id="menuButton" class="img">
+          <img  
             class="imagen-logotipo"
             src="img/Logo-con-fondo-Negro.png"
             alt=""
           />
+        </div>
         </nav>
       </header>
     </section>
@@ -32,5 +45,9 @@
     <section class="notas" id="notas"></section>
 
     <section class="contactame" id="contactame"></section>
+
+
+
+    <script src="menu.js"></script>
   </body>
 </html>

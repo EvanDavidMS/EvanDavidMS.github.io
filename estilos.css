@@ -56,16 +56,14 @@ body::-webkit-scrollbar-track {
     }
 
     .menu {
-        visibility: hidden;
+    
        position: absolute;
-       margin-top: 100px;
        opacity: 0;
        transition: 0.2s;
-
        visibility: visible;
        width: 100%;
-       height: 300px;
-       background: linear-gradient( rgba(0, 0, 0, 0.9), rgb(0, 0, 0, 0.3) );
+       height: 900px;
+       background: linear-gradient( rgba(0, 0, 0, 0.9), rgb(0, 0, 0, 0.9) );
        position: absolute;
        top: 0;
        left: 0;
@@ -77,12 +75,13 @@ body::-webkit-scrollbar-track {
     .menu.active {
         visibility: visible;
         width: 100%;
-        height: 300px;
-        background: linear-gradient( rgba(0, 0, 0, 0.9), rgb(0, 0, 0, 0.3) );
+        height: 900px;
+        background: linear-gradient( rgba(0, 0, 0, 0.9), rgb(0, 0, 0, 0.9) );
         position: absolute;
         top: 0;
         left: 0;
         display: flex;
+        padding-top: 150px;
         flex-direction: column;
         margin-top: 0px;
         opacity: 1;
@@ -105,6 +104,12 @@ body::-webkit-scrollbar-track {
         width: 30px;
         height: 30px;
         cursor: pointer;
+        background-image: url(img/exit.png);
+        background-color: transparent;
+        border: none;
+        background-size: cover;
+        background-repeat: none;
+        background-position: center;
     }
 
     .img {

@@ -1177,11 +1177,135 @@
               
       <div class="contenedor">
         <ul>
-          <li><span>git branch -D <nameBranch></span></li>
+          <li><span>git branch -D </span></li>
           <li><p>Elimina sin preguntar</p></li>
         </ul>
       </div>
       <h5>GIT REBASE</h5>
+
+             
+      <div class="contenedor">
+        <ul>
+          <li><span>git rebase</span></li>
+          <li><p>Los rebase se usan cuando trabajamos con branches esto hace que los branches se pongan al día con el master sin afectar al mismo
+
+            Une el branch actual con el mastar, esto no se puede ver como un merge</p></li>
+        </ul>
+      </div>
+             
+      <div class="contenedor">
+        <ul>
+          <li><span>git rebase --continue </span></li>
+          <li><p>Cuando se produce un conflicto no das las siguientes opciones:
+
+            cuando resolvemos los conflictos --continue continua la secuencia del rebase donde se pauso</p></li>
+        </ul>
+      </div>
+             
+      <div class="contenedor">
+        <ul>
+          <li><span>git rebase --skip</span></li>
+          <li><p>Omite el conflicto y sigue su camino</p></li>
+        </ul>
+      </div>
+             
+      <div class="contenedor">
+        <ul>
+          <li><span>git reabse --abort</span></li>
+          <li><p>Devuelve todo al principio del rebase</p></li>
+        </ul>
+      </div>
+             
+      <div class="contenedor">
+        <ul>
+          <li><span>git rebase &lt;nameBranch&gt;</span></li>
+          <li><p>Para hacer un rebase a un branch en especifico</p></li>
+        </ul>
+      </div>
+      <h5>OTROS COMANDOS</h5>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>git status</span></li>
+          <li><p>Lista un estado actual del repositorio con lista de archivos modificados o agregados</p></li>
+        </ul>
+      </div>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>git checkout -- &lt;file&gt;</span></li>
+          <li><p>Quita del HEAD un archivo y le pone el estado de no trabajado</p></li>
+        </ul>
+      </div>
+
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>git checkout -b newlocalbranchname origin/branch-name</span></li>
+          <li><p>Crea un branch en base a uno online</p></li>
+        </ul>
+      </div>
+
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>git pull origin &lt;nameBranch&gt;</span></li>
+          <li><p>Busca los cambios nuevos y actualiza el repositorio</p></li>
+        </ul>
+      </div>
+
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>git pull origin &lt;nameBranch&gt;</span></li>
+          <li><p>Busca los cambios nuevos y actualiza el repositorio</p></li>
+        </ul>
+      </div>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>git checkout &lt;nameBranch/tagname&gt;</span></li>
+          <li><p>Cambiar de branch</p></li>
+        </ul>
+      </div>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>git merge &lt;nameBranch&gt;</span></li>
+          <li><p>Une el branch actual con el especificado</p></li>
+        </ul>
+      </div>
+           
+      <div class="contenedor">
+        <ul>
+          <li><span>git fetch</span></li>
+          <li><p>Verifica cambios en el repositorio online con el local</p></li>
+        </ul>
+      </div>
+           
+      <div class="contenedor">
+        <ul>
+          <li><span>git rm &lt;archivo&gt;</span></li>
+          <li><p>Borrar un archivo del repositorio</p></li>
+        </ul>
+      </div>
+      <h5>FORK</h5>
+           
+      <div class="contenedor">
+        <ul>
+          <li><span>git remote add upstream &lt;url&gt;</span></li>
+          <li><p>Descargar remote de un fork</p></li>
+        </ul>
+      </div>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>git fetch upstream <br>
+            git merge upstream/master</span></li>
+          <li><p>Merge con master de un fork</p></li>
+        </ul>
+      </div>
+      <h2>JavaScript</h2>
     </section>
 
     <section class="contactame" id="contactame"></section>

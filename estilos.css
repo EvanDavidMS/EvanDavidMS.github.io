@@ -281,6 +281,12 @@ header nav ul li a {
         font-size: 12px;
     }
 
+    .notas {
+        width: 100%;
+        height: 20150px;
+        background-color: rgb(19, 19, 19);
+        padding-top: 10px;
+    }
 
 }
 
@@ -309,7 +315,7 @@ header nav ul li a {
 
     .notas {
         width: 100%;
-        height: 15150px;
+        height: 18150px;
         background-color: rgb(19, 19, 19);
         padding-top: 10px;
     }

@@ -562,38 +562,626 @@
        <h5>LISTAS</h5>
       <div class="contenedor">
         <ul>
-          <li><span>pc</span></li>
-          <li><p>Picas (1pica = 12 puntos).</p></li>
+          <li><span>list-style-type</span></li>
+          <li><p>Estilo aplicable a los marcadores visuales de las listas. (decimal | decimal-leading-zero | lower-roman | upper-roman | lower-greek | lower-latin | upper-latin | armenian | georgian | lower-alpha | upper-alpha | none)</p></li>
         </ul>
       </div>
         
       <div class="contenedor">
         <ul>
-          <li><span>pc</span></li>
-          <li><p>Picas (1pica = 12 puntos).</p></li>
+          <li><span>list-style-image</span></li>
+          <li><p>Imagen aplicable a los elementos de las listas. (url(«…») | none)</p></li>
         </ul>
       </div>
         
       <div class="contenedor">
         <ul>
-          <li><span>pc</span></li>
-          <li><p>Picas (1pica = 12 puntos).</p></li>
+          <li><span>list-style-position</span></li>
+          <li><p>Posición dentro de la lista de los elementos marcadores de las listas. (inside | outside)</p></li>
         </ul>
       </div>
         
       <div class="contenedor">
         <ul>
-          <li><span>pc</span></li>
-          <li><p>Picas (1pica = 12 puntos).</p></li>
+          <li><span>list-style</span></li>
+          <li><p>Permite establecer el estilo de la lista, la imagen y/o la posición. (list-style-type | list-style-position | list-style-image)</p></li>
         </ul>
       </div>
+      <h5>PSEUDO-CLASES PARA LA SELECCION DE HIJOS O HERMANOS</h5>
         
       <div class="contenedor">
         <ul>
-          <li><span>pc</span></li>
-          <li><p>Picas (1pica = 12 puntos).</p></li>
+          <li><span>:first-child</span></li>
+          <li><p>Primer hijo.</p></li>
         </ul>
       </div>
+         
+      <div class="contenedor">
+        <ul>
+          <li><span>:last-child</span></li>
+          <li><p>Último hijo.</p></li>
+        </ul>
+      </div>
+         
+      <div class="contenedor">
+        <ul>
+          <li><span>:first-of-type</span></li>
+          <li><p>Primer hermano de su tipo.</p></li>
+        </ul>
+      </div>
+         
+      <div class="contenedor">
+        <ul>
+          <li><span>:last-of-type</span></li>
+          <li><p>Último hermano de su tipo.</p></li>
+        </ul>
+      </div>
+         
+      <div class="contenedor">
+        <ul>
+          <li><span>:only-child	</span></li>
+          <li><p>Hijos únicos.</p></li>
+        </ul>
+      </div>
+         
+      <div class="contenedor">
+        <ul>
+          <li><span>:only-of-type</span></li>
+          <li><p>Únicos hermanos de su tipo.</p></li>
+        </ul>
+      </div>
+
+         
+      <div class="contenedor">
+        <ul>
+          <li><span>:empty</span></li>
+          <li><p>Elementos que no tienen hijos.</p></li>
+        </ul>
+      </div>
+
+         
+      <div class="contenedor">
+        <ul>
+          <li><span>:nth-child(n)</span></li>
+          <li><p>Enésimo elemento hijo.</p></li>
+        </ul>
+      </div>
+
+         
+      <div class="contenedor">
+        <ul>
+          <li><span>:nth-last-child(n)</span></li>
+          <li><p>Enésimo elemento hijo contando desde el último.</p></li>
+        </ul>
+      </div>
+
+          
+      <div class="contenedor">
+        <ul>
+          <li><span>:nth-of-type(n)</span></li>
+          <li><p>Enésimo hermano de su tipo.</p></li>
+        </ul>
+      </div>
+
+          
+      <div class="contenedor">
+        <ul>
+          <li><span>:nth-last-of-type(n)</span></li>
+          <li><p>Enésimo hermano de su tipo comenzando desde el último.</p></li>
+        </ul>
+      </div>
+      
+          <h5>PSEUDO-CLASES PARA LOS ESTADOS DE UN ELEMENTO</h5> 
+      <div class="contenedor">
+        <ul>
+          <li><span>:link</span></li>
+          <li><p>No visitado por el usuario.</p></li>
+        </ul>
+      </div>
+           
+      <div class="contenedor">
+        <ul>
+          <li><span>:visited</span></li>
+          <li><p>Visitado por el usuario.</p></li>
+        </ul>
+      </div>
+           
+      <div class="contenedor">
+        <ul>
+          <li><span>:hover</span></li>
+          <li><p>Modifica el estilo cuando un elemento apuntador pasa por encima.</p></li>
+        </ul>
+      </div>
+           
+      <div class="contenedor">
+        <ul>
+          <li><span>:active</span></li>
+          <li><p>Se activa cuando el usuario pulsa el elemento.</p></li>
+        </ul>
+      </div>
+           
+      <div class="contenedor">
+        <ul>
+          <li><span>:focus</span></li>
+          <li><p>Se activa cuando tiene el foco sobre el elemento.</p></li>
+        </ul>
+      </div>
+
+      <h5>PSEUDO-ELEMENTOS</h5>
+           
+      <div class="contenedor">
+        <ul>
+          <li><span>::first-line</span></li>
+          <li><p>Primera línea de texto de un elemento.</p></li>
+        </ul>
+      </div>
+           
+      <div class="contenedor">
+        <ul>
+          <li><span>::first-letter</span></li>
+          <li><p>Primera letra de la primera línea de texto de un elemento.</p></li>
+        </ul>
+      </div>
+           
+      <div class="contenedor">
+        <ul>
+          <li><span>::before</span></li>
+          <li><p>Añade contenido al principio del documento.</p></li>
+        </ul>
+      </div>
+           
+      <div class="contenedor">
+        <ul>
+          <li><span>::after</span></li>
+          <li><p>Añade contenido al final del documento.</p></li>
+        </ul>
+      </div>
+
+      <h5>MODELOS DE CAJAS: MARGENES, RELLENO Y BORDES</h5>
+      
+      <div class="contenedor">
+        <ul>
+          <li><span>padding-top <br> padding-right <br> padding-bottom <br> padding-left</span></li>
+          <li><p>Tamaño del relleno superior, derecho, inferior e izquierdo. (longitud | porcentaje)</p></li>
+        </ul>
+      </div>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>padding</span></li>
+          <li><p>Tamaño del relleno. (longitud | porcentaje {1,4})</p></li>
+        </ul>
+      </div>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>margin-top <br> margin-right <br> margin-bottom <br> margin-left</span></li>
+          <li><p>Tamaño del margen superior, derecho, inferior e izquierdo. (longitud | porcentaje | auto)</p></li>
+        </ul>
+      </div>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>margin</span></li>
+          <li><p>Ancho de los margenes. (longitud | porcentaje | auto {1,4})</p></li>
+        </ul>
+      </div>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>border-top-width. <br> border-right-width. <br> border-bottom-width. <br> border-left-width.</span></li>
+          <li><p>Anchura del borde superior, derecho, inferior o izquierdo. (thin | medium | thick | longitud)</p></li>
+        </ul>
+      </div>
+            
+      <div class="contenedor">
+        <ul>
+          <li><spanborder-width.</span></li>
+          <li><p>Anchura del borde (reducida). (thin | medium | thick | longitud {1,4})</p></li>
+        </ul>
+      </div>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>border-top-color. <br> border-right-color. <br> border-bottom-color. <br> border-left-color.</span></li>
+          <li><p>Color del borde superior, derecho, inferior e izquierdo. (color | transparent)</p></li>
+        </ul>
+      </div>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>border-color</span></li>
+          <li><p>Color del borde (reducida). (color | transparent {1,4})</p></li>
+        </ul>
+      </div>
+                
+      <div class="contenedor">
+        <ul>
+          <li><span>border-style</span></li>
+          <li><p>Estilo del borde (reducida). (none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset {1,4})</p></li>
+        </ul>
+      </div>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>border-top. <br> border-right. <br> border-bottom. <br> border-left.</span></li>
+          <li><p>Ancho, estilo y color para el borde superior, derecho, inferior e izquierdo. (border-top-width | border-top-style | border-top-color)</p></li>
+        </ul>
+      </div>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>border</span></li>
+          <li><p>Ancho, estilo y color para los bordes (reducida). (border-width | border-style | border-color)</p></li>
+        </ul>
+      </div>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>border-radius</span></li>
+          <li><p>Curvatura del borde. (longitud | porcentaje {1,4})</p></li>
+        </ul>
+      </div>
+      <h5>COMPORTAMIENTO DE LOS CONTENEDORES</h5>
+             
+      <div class="contenedor">
+        <ul>
+          <li><span>display</span></li>
+          <li><p>Comportamiento del contenedor. inline | block | inline-block | none)</p></li>
+        </ul>
+      </div>
+             
+      <div class="contenedor">
+        <ul>
+          <li><span>position</span></li>
+          <li><p>Esquema de posicionamiento. (static | relative | absolute | fixed)</p></li>
+        </ul>
+      </div>
+             
+      <div class="contenedor">
+        <ul>
+          <li><span>float</span></li>
+          <li><p>Posicionamiento flotante. (left | right | none)</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>top <br> right <br> bottom <br> left</span></li>
+          <li><p>Desplazamiento de la caja respecto al borde superior, derecho, inferior o izquierdo. (longitud | porcentaje | auto)</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>clear</span></li>
+          <li><p>Control de cajas adyacentes a las float. (none | left | right | both)</p></li>
+        </ul>
+      </div>
+             
+      <div class="contenedor">
+        <ul>
+          <li><span>z-index</span></li>
+          <li><p>Nivel de la capa. (auto | número entero})</p></li>
+        </ul>
+      </div>
+             
+      <div class="contenedor">
+        <ul>
+          <li><span>box-sizing</span></li>
+          <li><p>Control de bordes y relleno en el comportamiento del contenedor. (content-box | border-box)</p></li>
+        </ul>
+      </div>
+             
+      <div class="contenedor">
+        <ul>
+          <li><span>visibility</span></li>
+          <li><p>Muestra u oculta un elemento ocupando el espacio. (visible | hidden)</p></li>
+        </ul>
+      </div>
+
+      <!-- Git -->
+
+      <h2>GIT</h2>
+      <h5>CONFIGURACION BASICA</h5>
+            
+      <div class="contenedor">
+        <ul>
+          <li><span>git config --global user.name "dasdo"</span></li>
+          <li><p>Configurar Nombre que salen en los commits</p></li>
+        </ul>
+      </div>
+
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git config --global user.name "evan"</span></li>
+          <li><p>Configurar Nombre que salen en los commits</p></li>
+        </ul>
+      </div>
+
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git config --global user.email evankun@gmail.com</span></li>
+          <li><p>Configurar Email</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git config --global color.ui true</span></li>
+          <li><p>Marco de colores para los comando</p></li>
+        </ul>
+      </div>
+              <h5>INICIANDO REPOSITORIO</h5>
+      <div class="contenedor">
+        <ul>
+          <li><span>git init</span></li>
+          <li><p>Iniciamos GIT en la carpeta donde esta el proyecto</p></li>
+        </ul>
+      </div>
+      <div class="contenedor">
+        <ul>
+          <li><span>git clone &lt;url&gt;</span></li>
+          <li><p>Clonamos el repositorio de github o bitbucket</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git add .</span></li>
+          <li><p>Añadimos todos los archivos para el commit</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git commit -m "Texto que identifique por que se hizo el commit"</span></li>
+          <li><p>Hacemos el primer commit</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git push</span></li>
+          <li><p>subimos al repositorio</p></li>
+        </ul>
+      </div>
+      <h5>GIT CLONE</h5>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git clone &lt;url&gt;</span></li>
+          <li><p>Clonamos el repositorio de github o bitbucket</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git clone &lt;url&gt; git-demo</span></li>
+          <li><p>Clonamos el repositorio de github o bitbucket ?????</p></li>
+        </ul>
+      </div>
+      <h5>GIT ADD</h5>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git add .</span></li>
+          <li><p>Añadimos todos los archivos para el commit</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git add &lt;archivo&gt;</span></li>
+          <li><p>Añadimos el archivo para el commit</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git add --all </span></li>
+          <li><p>Añadimos todos los archivos para el commit omitiendo los nuevos</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git add *.txt</span></li>
+          <li><p>Añadimos todos los archivos con la extensión especificada</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git add docs/*.txt</span></li>
+          <li><p>Añadimos todos los archivos dentro de un directorio y de una extensión especifica</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git add docs/</span></li>
+          <li><p>Añadimos todos los archivos dentro de un directorios</p></li>
+        </ul>
+      </div>
+      <h5>GIT COMMIT</h5>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git commit -m "Texto que identifique por que se hizo el commit"</span></li>
+          <li><p>Cargar en el HEAD los cambios realizados</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git commit -a -m "Texto que identifique por que se hizo el commit"</span></li>
+          <li><p>Agregar y Cargar en el HEAD los cambios realizados</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git commit -a </span></li>
+          <li><p>De haber conflictos los muestra</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git commit --amend -m "Texto que identifique por que se hizo el commit"</span></li>
+          <li><p>Agregar al ultimo commit, este no se muestra como un nuevo commit en los logs. Se puede especificar un nuevo mensaje</p></li>
+        </ul>
+      </div>
+      <h5>GIT PUSH</h5>
+               
+      <div class="contenedor">
+        <ul>
+          <li><span>git push &lt;origen&gt; &lt;branch&gt;</span></li>
+          <li><p>Subimos al repositorio</p></li>
+        </ul>
+      </div>
+               
+      <div class="contenedor">
+        <ul>
+          <li><span>git push --tags</span></li>
+          <li><p>Subimos un tag</p></li>
+        </ul>
+      </div>
+      <h5>GIT LOG</h5>
+               
+      <div class="contenedor">
+        <ul>
+          <li><span>git log</span></li>
+          <li><p>Muestra los logs de los commits</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git log --oneline --stat</span></li>
+          <li><p>Muestras los cambios en los commits</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git log --oneline --graph</span></li>
+          <li><p>Muestra graficos de los commits</p></li>
+        </ul>
+      </div>
+      <h5>GIT HEAD</h5>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git reset HEAD <archivo></span></li>
+          <li><p>Saca un archivo del commit</p></li>
+        </ul>
+      </div>
+               
+      <div class="contenedor">
+        <ul>
+          <li><span>git reset --soft HEAD^<archivo></span></li>
+          <li><p>Devuelve el ultimo commit que se hizo y pone los cambios en staging</p></li>
+        </ul>
+      </div>
+               
+      <div class="contenedor">
+        <ul>
+          <li><span>git reset --hard HEAD^<archivo></span></li>
+          <li><p>Devuelve el ultimo commit y todos los cambios</p></li>
+        </ul>
+      </div>
+               
+      <div class="contenedor">
+        <ul>
+          <li><span>git reset --hard HEAD^^<archivo></span></li>
+          <li><p>Devuelve los 2 ultimo commit y todos los cambios</p></li>
+        </ul>
+      </div>
+               
+      <div class="contenedor">
+        <ul>
+          <li><span>git log <br>
+            git reset --hard &lt;commit_sha&gt;</span></li>
+          <li><p>Rollback merge/commit</p></li>
+        </ul>
+      </div>
+      <h5>GIT REMOTE</h5>
+               
+      <div class="contenedor">
+        <ul>
+          <li><span>git remote add origin &lt;url&gt;<commit_sha><archivo></span></li>
+          <li><p>Agregar repositorio remoto</p></li>
+        </ul>
+      </div>
+               
+      <div class="contenedor">
+        <ul>
+          <li><span>	git remote set-url origin &lt;url&gt;<commit_sha><archivo></span></li>
+          <li><p>Cambiar de remote</p></li>
+        </ul>
+      </div>
+               
+      <div class="contenedor">
+        <ul>
+          <li><span>git remote rm &lt;name/origin&gt;</span></li>
+          <li><p>Remover repositorio</p></li>
+        </ul>
+      </div>
+               
+      <div class="contenedor">
+        <ul>
+          <li><span>git remote -v</span></li>
+          <li><p>Muestra lista repositorios</p></li>
+        </ul>
+      </div>
+               
+      <div class="contenedor">
+        <ul>
+          <li><span>git remote show origin</span></li>
+          <li><p>Muestra los branches remotos</p></li>
+        </ul>
+      </div>
+               
+      <div class="contenedor">
+        <ul>
+          <li><span>git remote prune origin </span></li>
+          <li><p>Limpiar todos los branches eliminados</p></li>
+        </ul>
+      </div>
+      <h5>GIT BRANCH</h5>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git branch &lt;nameBranch&gt; </span></li>
+          <li><p>Crea un branch</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git branch</span></li>
+          <li><p>Lista los branches</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git branch -d &lt;nameBranch&gt;</span></li>
+          <li><p>Comando -d elimina el branch y lo une al master</p></li>
+        </ul>
+      </div>
+              
+      <div class="contenedor">
+        <ul>
+          <li><span>git branch -D <nameBranch></span></li>
+          <li><p>Elimina sin preguntar</p></li>
+        </ul>
+      </div>
+      <h5>GIT REBASE</h5>
     </section>
 
     <section class="contactame" id="contactame"></section>

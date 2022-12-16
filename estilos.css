@@ -223,83 +223,84 @@ header nav ul li a {
 }
 
 
-/* Portafolio */
-
-.trabajo h1 {
-    text-align: center;
-    color: white;
-    padding: 30px;
-    background-color: #181414;
-   
+/* Trabajo */
+.trabajo {
+    width: 100%;
+    height: 1400px;
+    background-color: #0e0c0c;
 }
 
 .contenedor-trabajo {
-    width: 100%;
-    height: 450px;
-    background-color:#181414;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    min-height: 100vh;
 }
 
-.contenedor-trabajo ul {
-    display: flex;
-}
 .contenedor-trabajo ul li {
     list-style: none;
 }
 
-.trabajo-1 {
-    width: 280px;
-    height: 400px;
-    background-color: rgb(38, 38, 38);
-    margin: 10px;
+.contenedor-trabajo ul li img { 
+    width: 300px;
+    margin-left: 50px;
     border-radius: 10px;
+}
+
+.trabajo-1 {
+    width: 1000px;
+    height: 300px;
+    background-color: #181414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px;
 }
 
 .trabajo-1 ul {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.trabajo-1 ul li {
-    list-style: none;
+.titulo-texto {
+    display: flex;
 }
 
-.trabajo-1 ul li h2 {
-    color: #fff;
-    border-bottom: 1px solid rgb(23, 23, 23);
-    padding-bottom: 4px;
-    padding-top: 4px;
+.titulo-texto ul  {
+    display: inline;
+    text-align: center;
+    padding-left: 80px;
 }
 
-.trabajo-1 ul li p {
-    color: #fff;
-    font-size: 13px;
-    padding: 20px;
+.titulo-texto ul li h1 {
+    color: yellow;
+    margin-top: 30px;
 }
 
-.trabajo-1 ul li button {
+.titulo-texto ul li p {
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.titulo-texto ul li button {
     width: 120px;
     height: 30px;
-    border-radius: 10px;
-    background-color: #181414;
-}
-
-.trabajo-1 ul li button a {
-   text-decoration: none;
+   margin-top: 30px;
+   border: 1px solid rgb(31, 31, 31);
+   background-color: #0e0c0c;
    color: yellow;
+   border-radius: 5px;
+   
 }
 
-.trabajo-1 ul li img {
-    margin-top: 5px;
-    width: 250px;
-    height: 150px;
-    border-radius: 10px;
+.titulo-texto ul li button a {
+    text-decoration: none;
+    color: yellow;
+   
 }
-
-
-
 
 /* Notas */
 
@@ -361,6 +362,12 @@ header nav ul li a {
         padding-top: 10px;
     }
 
+   
+
+}
+
+@media(max-width: 800px) {
+   
 }
 
 
@@ -391,6 +398,31 @@ header nav ul li a {
         height: 24150px;
         background-color: rgb(19, 19, 19);
         padding-top: 10px;
+    }
+
+    
+}
+
+@media(max-width: 1200px) {
+    .trabajo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trabajo ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-trabajo ul   {
+        flex-wrap: wrap;
+     }
+
+     .trabajo {
+        height: 3000px;
+        background-color: #181414;
     }
 }
 

@@ -366,12 +366,57 @@ header nav ul li a {
 
 }
 
-@media(max-width: 800px) {
+@media(max-width: 1200px) {
+    .trabajo-1 {
+        width: 800px;
+        height: 400px;
+    }
+
    
+    
+
+    .titulo-texto ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .trabajo {
+        height:1800px;
+    }
+}
+
+
+@media(max-width: 850px) {
+    .trabajo {
+        height: 2600px;
+    }
+
+    .trabajo-1 {
+        width: 400px;
+        height: 600px;
+    }
+
+    .trabajo-1 ul {
+        display: inline;
+    }
+
+    .titulo-texto ul {
+        display: inline;
+    }
 }
 
 
 @media(max-width: 800px) {
+    .trabajo {
+        height: 2200px;
+    }
+
+
+    .trabajo-1 {
+        width: 400px;
+        height: 500px;
+    }
+
     .notas h2 {
         color: rgb(229, 255, 0);
         text-align: center;
@@ -398,33 +443,53 @@ header nav ul li a {
         height: 24150px;
         background-color: rgb(19, 19, 19);
         padding-top: 10px;
-    }
-
-    
+    }  
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 520px) {
+    .trabajo-1 {
+        width: 300px;
+        height: 400px;
+    }
+
+    .trabajo-1 ul li img {
+        width: 200px;
+    }
+    .trabajo-1 ul li p {
+       font-size: 12px;
+    }
+    .trabajo-1 ul li h1 {
+        font: 15px;
+    }
+
     .trabajo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .trabajo ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contenedor-trabajo ul   {
-        flex-wrap: wrap;
-     }
-
-     .trabajo {
-        height: 3000px;
-        background-color: #181414;
+        height: 1800px;
     }
 }
+
+@media(max-width: 370px) {
+    .trabajo-1 {
+        width: 250px;
+        height: 350px;
+    }
+
+    .trabajo-1 ul li img {
+        width: 150px;
+    }
+    .trabajo-1 ul li p {
+       font-size: 10px;
+    }
+    .trabajo-1 ul li h1 {
+        font: 13px;
+    }
+
+    .trabajo {
+        height: 1600px;
+    }
+}
+
+
+
 
 .contenedor {
     width: 100%;

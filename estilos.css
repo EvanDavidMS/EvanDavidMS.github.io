@@ -160,7 +160,7 @@ header {
 header nav {
     width: 100%;
     height: 80px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
     display: flex;
     align-items: center;
     position: fixed;
@@ -224,6 +224,77 @@ header nav ul li a {
 
 
 /* Portafolio */
+
+.trabajo h1 {
+    text-align: center;
+    color: white;
+    background-color: #181414;
+}
+
+.contenedor-trabajo {
+    width: 100%;
+    height: 450px;
+    background-color:#181414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-trabajo ul {
+    display: flex;
+}
+.contenedor-trabajo ul li {
+    list-style: none;
+}
+
+.trabajo-1 {
+    width: 280px;
+    height: 400px;
+    background-color: rgb(38, 38, 38);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.trabajo-1 ul {
+    display: inline-block;
+}
+
+.trabajo-1 ul li {
+    list-style: none;
+}
+
+.trabajo-1 ul li h2 {
+    color: #fff;
+    border-bottom: 1px solid rgb(23, 23, 23);
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+.trabajo-1 ul li p {
+    color: #fff;
+    font-size: 13px;
+    padding: 20px;
+}
+
+.trabajo-1 ul li button {
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #181414;
+}
+
+.trabajo-1 ul li button a {
+   text-decoration: none;
+   color: yellow;
+}
+
+.trabajo-1 ul li img {
+    margin-top: 5px;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+}
 
 
 

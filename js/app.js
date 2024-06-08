@@ -1,7 +1,4 @@
-// app.js
-
 document.addEventListener('DOMContentLoaded', function () {
-    // Crear el IntersectionObserver
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -10,12 +7,31 @@ document.addEventListener('DOMContentLoaded', function () {
           entry.target.classList.remove('in-view');
         }
       });
-    }, { threshold: 0.1 }); // Se activará cuando al menos el 10% del elemento esté visible
+    }, { threshold: 0.1 }); 
   
-    // Seleccionar todas las secciones
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {
       observer.observe(section);
     });
   });
   
+
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('nav a[href^="#"]');
+
+  for (const link of links) {
+    link.addEventListener('click', smoothScroll);
+  }
+
+  function smoothScroll(event) {
+    event.preventDefault();
+
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    window.scrollTo({
+      top: targetElement.offsetTop,
+      behavior: 'smooth'
+    });
+  }
+});

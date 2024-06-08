@@ -1,0 +1,459 @@
+@font-face {
+    font-family: 'Protofo';
+    src: url('/fonts/protofo-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Protofo';
+    src: url('/fonts/protofo-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,span {
+    color: var(--color-p);
+}
+
+body {
+    background-color: var(--color-negro);
+    font-family: 'Protofo';
+}
+
+:root {
+    --color-blanco: #fff;
+    --color-index: #111111;
+    --color-p: #707070;
+    --color-negro: #000000;
+    --color-yellow: #FFF3B6;
+    --color-purple: #BC78FF;
+}
+
+img {
+    width: 50px;
+}
+
+header {
+    background-color: var(--color-index);
+    padding: 15px 160px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    transition: all 1s;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--color-p);
+    font-weight: 300;
+    font-size: 20px;
+    transition: all 0.2s;
+}
+
+header nav ul li a:hover {
+    color: var(--color-blanco);
+}
+
+#Inicio {
+    background-color: var(--color-index);
+    padding: 100px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+#Inicio .intro {
+    max-width: 800px;
+}
+
+#Inicio h1 {
+    font-size: 40px;
+    color: var(--color-yellow);
+}
+
+#Inicio p {
+    font-size: 22px;
+    color: var(--color-p);
+}
+
+#Inicio a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 24px;
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+
+/* sobre mi */
+
+#sobre-mi {
+    padding: 100px 20% 40px 20%;
+}
+
+.h4 {
+    color: var(--color-purple);
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.h3 {
+    color: var(--color-blanco);
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#sobre-mi ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+#sobre-mi .two-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#sobre-mi .two-section h2 {
+    font-size: 25px;
+    color: var(--color-blanco);
+    font-weight: bold;
+}
+
+#sobre-mi .two-section h5 {
+    font-size: 18px;
+    color: var(--color-blanco);
+    font-weight: normal;
+}
+
+/* Habilidades-1 */
+
+#habilidades-1 {
+    padding: 100px 20% 40px 20%;
+}
+
+#habilidades-1 .intro {
+    max-width: 800px;
+}
+
+.span {
+    text-decoration: underline;
+}
+
+#habilidades-1 .grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas con el mismo ancho */
+    grid-template-rows: repeat(4, auto); /* Crea 4 filas con altura automática */
+    gap: 40px; /* Espacio entre las celdas */
+}
+
+#habilidades-1 .grid .skill h3 {
+    font-size: 25px;
+    font-weight: normal;
+    color: var(--color-blanco);
+}
+
+#habilidades-1 .grid .skill h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+#habilidades-2 {
+    padding: 20px 20% 40px 20% !important; 
+}
+
+#habilidades-2 .intro {
+    max-width: 1300px;
+}
+
+#habilidades-2 .grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 4 columnas con el mismo ancho */
+    grid-template-rows: repeat(3, auto); /* Crea 4 filas con altura automática */
+    gap: 60px; /* Espacio entre las celdas */
+}
+
+#habilidades-2 .grid .skill h3 {
+    font-size: 25px;
+    font-weight: normal;
+    color: var(--color-blanco);
+}
+
+#habilidades-2 .grid .skill h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+/* Proyectos */
+
+
+#proyectos {
+    padding: 20px 20% 40px 20% !important; 
+}
+
+#proyectos .intro {
+    max-width: 800px;
+}
+
+
+#proyectos .grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 4 columnas con el mismo ancho */
+    grid-template-rows: repeat(3, auto); /* Crea 4 filas con altura automática */
+    gap: 60px; /* Espacio entre las celdas */
+    place-items: center;
+}
+
+
+#proyectos .grid .skill {
+    width: 350px;
+    height: 350px;
+    background-color: transparent;
+    border: 1px solid var(--color-blanco);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#proyectos .grid .skill h3 {
+    font-size: 25px;
+    color: var(--color-blanco);
+}
+
+#proyectos .grid .skill h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#proyectos .grid .skill .two-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+#proyectos .grid .skill .two-section a button {
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    background-color: transparent;
+    color: var(--color-blanco);
+    transition: all 0.5s;
+}
+
+#proyectos .grid .skill .two-section a button:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+
+#proyectos .grid .skill .two-section a i {
+    color: var(--color-blanco);
+    font-size: 40px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-index);
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query */
+
+@media (max-width: 1700px){
+    #proyectos .grid {
+        grid-template-columns: repeat(2, 1fr); /* Crea 4 columnas con el mismo ancho */
+        grid-template-rows: repeat(3, auto); /* Crea 4 filas con altura automática */
+    }
+}
+
+@media (max-width: 1150px){
+    #habilidades-1 .grid, #habilidades-2 .grid {
+        grid-template-columns: repeat(2, 1fr); /* Reduce a 2 columnas */
+    }
+
+    #proyectos .grid {
+        grid-template-columns: repeat(1, 1fr); /* Crea 4 columnas con el mismo ancho */
+        grid-template-rows: repeat(3, auto); /* Crea 4 filas con altura automática */
+    }
+
+    header {
+        display: none;
+    }
+}
+
+@media (max-width: 815px){
+    #sobre-mi .two-section h2 {
+        font-size: 20px;
+    }
+    
+    #sobre-mi .two-section h5 {
+        font-size: 14px;
+    }
+
+    #habilidades-2 .grid {
+        grid-template-columns: repeat(1, 1fr); /* Reduce a 1 columna */
+    }
+
+    #Inicio h1 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    
+    #Inicio p {
+        font-size: 12px;
+    }
+    
+    #Inicio a {
+        font-size: 14px;
+    }
+
+    .h4 {
+        font-size: 12px;
+    }
+    
+    .h3 {
+        font-size: 20px;
+    }
+
+    #sobre-mi .two-section h2 {
+        font-size: 15px;
+    }
+    
+    #sobre-mi .two-section h5 {
+        font-size: 8px;
+    }
+
+    #sobre-mi p {
+        font-size: 8px;
+    }
+
+    #habilidades-1 .grid .skill h3 {
+        font-size: 15px;
+    }
+    
+    #habilidades-1 .grid .skill h2 {
+        font-size: 10px;
+    }
+
+    #habilidades-2 .grid .skill h3 {
+        font-size: 15px;
+    }
+    
+    #habilidades-2 .grid .skill h2 {
+        font-size: 10px;
+    }
+
+    #proyectos .grid .skill {
+        width: 250px;
+        height: 250px;
+    }
+    
+    #proyectos .grid .skill h3 {
+        font-size: 15px;
+        color: var(--color-blanco);
+    }
+    
+    #proyectos .grid .skill h2 {
+        font-size: 10px;
+        font-weight: normal;
+    }
+
+    #proyectos .grid .skill .two-section a button {
+        width: 110px;
+        height: 30px;
+        font-size: 10px;
+    }
+    
+    #proyectos .grid .skill .two-section a i {
+        color: var(--color-blanco);
+        font-size: 30px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+/* JS */
+
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  /* Estilo para las secciones visibles */
+  section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }

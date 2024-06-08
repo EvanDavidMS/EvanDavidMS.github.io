@@ -43,9 +43,6 @@ img {
 header {
     background-color: var(--color-index);
     padding: 15px 160px;
-    position: sticky;
-    top: 0px;
-    z-index: 100;
     transition: all 1s;
 }
 
@@ -132,6 +129,7 @@ header nav ul li a button:hover {
 /* sobre mi */
 
 #sobre-mi {
+    margin-top: 100px;
     padding: 100px 20% 40px 20%;
 }
 
@@ -179,6 +177,7 @@ header nav ul li a button:hover {
 /* Habilidades-1 */
 
 #habilidades-1 {
+    margin-top: 100px;
     padding: 100px 20% 40px 20%;
 }
 
@@ -246,6 +245,7 @@ header nav ul li a button:hover {
 
 
 #proyectos {
+    margin-top: 100px;
     padding: 20px 20% 40px 20% !important; 
 }
 

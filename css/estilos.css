@@ -78,6 +78,25 @@ header nav ul li a:hover {
     color: var(--color-blanco);
 }
 
+header nav ul li a button {
+    width: 100px;
+    height: 35px;
+    font-size: 18px;
+    background-color: transparent;
+    color: var(--color-p);
+    border: 1px solid var(--color-p);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .2s;
+}
+
+header nav ul li a button:hover {
+    color: var(--color-negro);
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-negro);
+    transform: scale(1.1);
+}
+
 #Inicio {
     background-color: var(--color-index);
     padding: 100px 10%;
@@ -407,8 +426,8 @@ footer {
     }
 
     #proyectos .grid .skill {
-        width: 220px;
-        height: 220px;
+        width: 250px;
+        height: 250px;
     }
     
     #proyectos .grid .skill h3 {

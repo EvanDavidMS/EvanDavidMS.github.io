@@ -365,7 +365,7 @@ footer {
 
 @media (max-width: 815px){
     #sobre-mi .two-section h2 {
-        font-size: 20px;
+        font-size: 25px;
     }
     
     #sobre-mi .two-section h5 {
@@ -377,16 +377,16 @@ footer {
     }
 
     #Inicio h1 {
-        font-size: 20px;
+        font-size: 30px;
         margin: 10px 0;
     }
     
     #Inicio p {
-        font-size: 12px;
+        font-size: 14px;
     }
     
     #Inicio a {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .h4 {
@@ -398,15 +398,15 @@ footer {
     }
 
     #sobre-mi .two-section h2 {
-        font-size: 15px;
+        font-size: 17px;
     }
     
     #sobre-mi .two-section h5 {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     #sobre-mi p {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     #habilidades-1 .grid .skill h3 {
@@ -418,32 +418,31 @@ footer {
     }
 
     #habilidades-2 .grid .skill h3 {
-        font-size: 15px;
+        font-size: 18px;
     }
     
     #habilidades-2 .grid .skill h2 {
-        font-size: 10px;
+        font-size: 12px;
     }
-
     #proyectos .grid .skill {
         width: 250px;
         height: 250px;
     }
     
     #proyectos .grid .skill h3 {
-        font-size: 15px;
+        font-size: 25px;
         color: var(--color-blanco);
     }
     
     #proyectos .grid .skill h2 {
-        font-size: 10px;
+        font-size: 13px;
         font-weight: normal;
     }
 
     #proyectos .grid .skill .two-section a button {
         width: 110px;
         height: 30px;
-        font-size: 10px;
+        font-size: 12px;
     }
     
     #proyectos .grid .skill .two-section a i {

@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/estilos.css" />
-    <script src="https://kit.fontawesome.com/89c476aff8.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/89c476aff8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Evan David - Desarrollador Full-Stack</title>
   </head>
   <body>
@@ -18,11 +21,17 @@
           <li><a href="#sobre-mi">Sobre Mí</a></li>
           <li><a href="#habilidades-1">Habilidades</a></li>
           <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="https://drive.google.com/file/d/114AsykcsxrP9QeS8rSwUcHgI4F4U3egl/view?usp=sharing" target="_blank"><button>Ver CV</button></a></li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/114AsykcsxrP9QeS8rSwUcHgI4F4U3egl/view?usp=sharing"
+              target="_blank"
+              ><button>Ver CV</button></a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <Main id="Inicio">
+    <main id="Inicio">
       <div class="intro">
         <p>Desarrollador Full-Stack</p>
         <h1>Evan David</h1>
@@ -35,7 +44,7 @@
         </p>
         <a href="#" class="contact">Contáctame ></a>
       </div>
-    </Main>
+    </main>
 
     <section id="sobre-mi">
       <div class="intro">
@@ -247,62 +256,96 @@
         <h4 class="h4">Proyectos ></h4>
         <h3 class="h3">Logros</h3>
         <div class="grid">
-          <div class="skill">
-            <h3>Blog</h3>
-            <h2>
-              Una plataforma en línea para la publicación periódica de artículos sobre diversos temas, facilitando la interacción con los lectores.
-            </h2>
-           <div class="two-section"> <a href=""><button>Explorar ></button></a><a href="#"><i class="fa-brands fa-github"></i></a></div>
-          </div>
-
-          <div class="skill">
-            <h3>Generador de
-                Contraseñas</h3>
-            <h2>
-                Generar contraseñas seguras basadas en los criterios proporcionados por el usuario
-            </h2>
-           <div class="two-section"> <a href=""><button>Explorar ></button></a><a href="#"><i class="fa-brands fa-github"></i></a></div>
-          </div>
-
-          <div class="skill">
-            <h3>Lista de Notas</h3>
-            <h2>
-                Una plataforma en línea para la publicación periódica de artículos sobre diversos temas, facilitando la interacción con los lectores.
-            </h2>
-           <div class="two-section"> <a href=""><button>Explorar ></button></a><a href="#"><i class="fa-brands fa-github"></i></a></div>
-          </div>
-
-          <div class="skill">
-            <h3>Sistema de Registro
-                y Autenticación</h3>
-            <h2>
+          <article class="card">
+            <figure class="card-image"></figure>
+            <section class="card-content">
+              <h2 class="card-title">Blog</h2>
+              <p class="card-desc">
+                Una plataforma en línea para la publicación periódica de
+                artículos sobre diversos temas, facilitando la interacción con
+                los lectores.
+              </p>
+              <a class="card-action" href="#">
+                Explorar
+                <span aria-hidden="true">→</span>
+              </a>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="card-image"></figure>
+            <section class="card-content">
+              <h2 class="card-title">Generador de Contraseñas</h2>
+              <p class="card-desc">
+                Generar contraseñas seguras basadas en los criterios
+                proporcionados por el usuario.
+              </p>
+              <a class="card-action" href="#">
+                Explorar
+                <span aria-hidden="true">→</span>
+              </a>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="card-image"></figure>
+            <section class="card-content">
+              <h2 class="card-title">Lista de Notas</h2>
+              <p class="card-desc">
+                Una plataforma en línea para la publicación periódica de
+                artículos sobre diversos temas, facilitando la interacción con
+                los lectores.
+              </p>
+              <a class="card-action" href="#">
+                Explorar
+                <span aria-hidden="true">→</span>
+              </a>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="card-image"></figure>
+            <section class="card-content">
+              <h2 class="card-title">Sistema de Registro y Autenticación</h2>
+              <p class="card-desc">
                 Validación de datos y el manejo de sesiones.
-            </h2>
-           <div class="two-section"> <a href=""><button>Explorar ></button></a><a href="#"><i class="fa-brands fa-github"></i></a></div>
-          </div>
-
-          <div class="skill">
-            <h3>Generador de
-                Código QR</h3>
-            <h2>
-                permita a los usuarios generar códigos QR personalizados para enlaces
-            </h2>
-           <div class="two-section"> <a href=""><button>Explorar ></button></a><a href="#"><i class="fa-brands fa-github"></i></a></div>
-          </div>
-
-          <div class="skill">
-            <h3>Galería de Arte</h3>
-            <h2>
-                una galería virtual donde los artistas puedan exhibir y vender sus obras de arte, con opciones para filtrar por categoría, estilo o precio.
-            </h2>
-           <div class="two-section"> <a href=""><button>Explorar ></button></a><a href="#"><i class="fa-brands fa-github"></i></a></div>
-          </div>
-          
+              </p>
+              <a class="card-action" href="#">
+                Explorar
+                <span aria-hidden="true">→</span>
+              </a>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="card-image"></figure>
+            <section class="card-content">
+              <h2 class="card-title">Generador de Código QR</h2>
+              <p class="card-desc">
+                Permite a los usuarios generar códigos QR personalizados para enlaces.
+              </p>
+              <a class="card-action" href="#">
+                Explorar
+                <span aria-hidden="true">→</span>
+              </a>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="card-image"></figure>
+            <section class="card-content">
+              <h2 class="card-title">Galería de Arte</h2>
+              <p class="card-desc">
+                Una galería virtual donde los artistas puedan exhibir y vender sus obras de arte, con opciones para filtrar por categoría, estilo o precio.
+              </p>
+              <a class="card-action" href="#">
+                Explorar
+                <span aria-hidden="true">→</span>
+              </a>
+            </section>
+          </article>
         </div>
       </div>
     </section>
 
-    <footer><p>Copyright © 2024 EvanDavidMS. Todos los derechos reservados.</p></footer>
+    <footer>
+      <p>Copyright © 2024 EvanDavidMS. Todos los derechos reservados.</p>
+    </footer>
 
     <script src="js/app.js"></script>
   </body>

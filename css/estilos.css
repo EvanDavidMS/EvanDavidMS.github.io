@@ -479,12 +479,21 @@ footer {
 
 section {
     opacity: 0;
-    transform: translateY(50px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  /* Estilo para las secciones visibles */
-  section.in-view {
+}
+
+/* Initial state for sections coming from the left */
+section.from-left {
+    transform: translateX(-50px);
+}
+
+/* Initial state for sections coming from the right */
+section.from-right {
+    transform: translateX(50px);
+}
+
+/* Style for sections that are in view */
+section.in-view {
     opacity: 1;
-    transform: translateY(0);
-  }
+    transform: translateX(0);
+}

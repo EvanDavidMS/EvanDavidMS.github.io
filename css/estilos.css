@@ -27,7 +27,7 @@ body {
     background: #000000;
     --gap: 2em;
     --line: 1px;
-    --color: rgba(255, 255, 255, 0.04);
+    --color: rgba(255, 255, 255, 0.08);
   
     background-image: linear-gradient(
         -90deg,
@@ -277,18 +277,19 @@ header nav ul li a button:hover {
     grid-template-columns: repeat(3, 1fr); /* Crea 4 columnas con el mismo ancho */
     grid-template-rows: repeat(3, auto); /* Crea 4 filas con altura automática */
     gap: 100px; /* Espacio entre las celdas */
-    place-items: center;
 }
 
 
 /* Grid proyectos  */
 .card {
-    width: 300px;
+    width: 280px;
     border-radius: 0.5rem;
     background-color: var(--color-index);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     border: 1px solid transparent;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
   
   .card a {
@@ -304,6 +305,10 @@ header nav ul li a button:hover {
   
   .card-content {
     padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 10px;
   }
   
   .card-title {
@@ -322,7 +327,7 @@ header nav ul li a button:hover {
   
   .card-action {
     display: inline-flex;
-    margin-top: 1rem;
+    margin-top: auto;
     color: #ffffff;
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -333,6 +338,7 @@ header nav ul li a button:hover {
     padding: 4px 8px;
     border-radius: 4px;
     transition: transform 0.3s ease;
+    width: 100px;
   }
   
   .card-action span {
@@ -342,6 +348,7 @@ header nav ul li a button:hover {
   .card-action:hover span {
     transform: translateX(4px);
   }
+  
   
   
 

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         entry.target.classList.remove('in-view');
       }
     });
-  }, { threshold: 0.25 });
+  }, { threshold: 0.1999999 });
 
   const sections = document.querySelectorAll('section');
   sections.forEach((section, index) => {

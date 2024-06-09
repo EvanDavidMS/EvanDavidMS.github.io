@@ -1,20 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
-        } else {
-          entry.target.classList.remove('in-view');
-        }
-      });
-    }, { threshold: 0.1 }); 
-  
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-      observer.observe(section);
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      } else {
+        entry.target.classList.remove('in-view');
+      }
     });
+  }, { threshold: 0.25 });
+
+  const sections = document.querySelectorAll('section');
+  sections.forEach((section, index) => {
+    observer.observe(section);
+    if (index % 2 === 0) {
+      section.classList.add('from-left');
+    } else {
+      section.classList.add('from-right');
+    }
   });
-  
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('nav a[href^="#"]');

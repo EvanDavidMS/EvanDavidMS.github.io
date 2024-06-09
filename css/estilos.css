@@ -23,10 +23,27 @@ h1,h2,h3,h4,h5,h6,p,span {
 }
 
 body {
-    background-color: var(--color-negro);
     font-family: 'Protofo';
+    background: #000000;
+    --gap: 2em;
+    --line: 1px;
+    --color: rgba(255, 255, 255, 0.04);
+  
+    background-image: linear-gradient(
+        -90deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      ),
+      linear-gradient(
+        0deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      );
+    background-size: var(--gap) var(--gap);
 }
-
+  
 :root {
     --color-blanco: #fff;
     --color-index: #111111;

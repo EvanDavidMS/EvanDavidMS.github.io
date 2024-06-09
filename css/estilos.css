@@ -159,7 +159,7 @@ header nav ul li a button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 #sobre-mi .two-section h2 {
@@ -364,6 +364,12 @@ footer {
 }
 
 @media (max-width: 815px){
+
+
+    #Inicio, #sobre-mi, #habilidades-1, #habilidades-2, #proyectos {
+        padding: 100px 12% 40px 12%;
+    }
+
     #sobre-mi .two-section h2 {
         font-size: 25px;
     }
@@ -398,15 +404,15 @@ footer {
     }
 
     #sobre-mi .two-section h2 {
-        font-size: 17px;
+        font-size: 20px;
     }
     
     #sobre-mi .two-section h5 {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     #sobre-mi p {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     #habilidades-1 .grid .skill h3 {
@@ -414,15 +420,15 @@ footer {
     }
     
     #habilidades-1 .grid .skill h2 {
-        font-size: 10px;
+        font-size: 1px;
     }
 
     #habilidades-2 .grid .skill h3 {
-        font-size: 18px;
+        font-size: 20px;
     }
     
     #habilidades-2 .grid .skill h2 {
-        font-size: 12px;
+        font-size: 13px;
     }
     #proyectos .grid .skill {
         width: 250px;
@@ -457,7 +463,14 @@ footer {
 }
 
 
-
+@media (max-width: 460px){
+    #sobre-mi .two-section {
+        display: grid;
+        grid-template-columns: repeat(2, 60% 40%); 
+        place-items: left;
+        
+    }
+}
 
 
 

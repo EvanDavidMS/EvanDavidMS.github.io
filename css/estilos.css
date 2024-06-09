@@ -262,7 +262,7 @@ header nav ul li a button:hover {
 
 
 #proyectos {
-    margin-top: 100px;
+    margin-top: 30px;
     padding: 20px 20% 40px 20% !important; 
 }
 
@@ -276,60 +276,74 @@ header nav ul li a button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Crea 4 columnas con el mismo ancho */
     grid-template-rows: repeat(3, auto); /* Crea 4 filas con altura automática */
-    gap: 60px; /* Espacio entre las celdas */
+    gap: 100px; /* Espacio entre las celdas */
     place-items: center;
 }
 
 
-#proyectos .grid .skill {
-    width: 350px;
-    height: 350px;
-    background-color: transparent;
-    border: 1px solid var(--color-blanco);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: left;
-    flex-direction: column;
-    padding: 20px;
-}
-
-#proyectos .grid .skill h3 {
-    font-size: 25px;
+/* Grid proyectos  */
+.card {
+    width: 300px;
+    border-radius: 0.5rem;
+    background-color: var(--color-index);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    overflow: hidden;
+  }
+  
+  .card a {
+    text-decoration: none;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(37, 37, 37);
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 1.1rem;
+  }
+  
+  .card-title {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
     color: var(--color-blanco);
-}
-
-#proyectos .grid .skill h2 {
-    font-size: 20px;
-    font-weight: normal;
-}
-
-#proyectos .grid .skill .two-section {
-    display: flex;
-    justify-content: space-between;
+  }
+  
+  .card-desc {
+    margin-top: 0.5rem;
+    color: var(--color-p);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .card-action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
     align-items: center;
-    padding: 0 10px;
-}
-
-
-#proyectos .grid .skill .two-section a button {
-    width: 120px;
-    height: 40px;
-    font-size: 20px;
-    background-color: transparent;
-    color: var(--color-blanco);
-    transition: all 0.5s;
-}
-
-#proyectos .grid .skill .two-section a button:hover {
-    background-color: var(--color-blanco);
-    color: var(--color-negro);
-}
-
-
-#proyectos .grid .skill .two-section a i {
-    color: var(--color-blanco);
-    font-size: 40px;
-}
+    gap: 0.25rem;
+    background-color: var(--color-negro);
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-action span {
+    transition: transform 0.3s ease;
+  }
+  
+  .card-action:hover span {
+    transform: translateX(4px);
+  }
+  
+  
 
 /* Footer */
 
@@ -486,6 +500,12 @@ footer {
         grid-template-columns: repeat(2, 60% 40%); 
         place-items: left;
         
+    }
+
+    #proyectos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

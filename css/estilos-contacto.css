@@ -145,6 +145,8 @@ section i {
     border: 1px solid var(--color-negro);
 }
 
+
+
 @media (max-width: 1300px) {
     body {
         flex-direction: column;
@@ -279,7 +281,12 @@ section i {
     }
 }
 
-@media (max-width: 545px){
+.back .back-text {
+    display: none;
+    color: var(--color-blanco);
+}
+
+@media (max-width: 545px) {
     .back {
         position: relative;
         width: 300px;
@@ -289,12 +296,9 @@ section i {
     .back i {
         display: none;
     }
-}
 
-.back::after {
-    content: 'Back';
-    display: inline-block;
-    color: var(--color-blanco);
-    font-size: 20px;
-    margin-left: 10px; /* Espacio entre el borde y el texto */
+    .back .back-text {
+        display: inline;
+        font-size: 20px;
+    }
 }
